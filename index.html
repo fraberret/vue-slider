@@ -29,21 +29,10 @@
                 <div class="thumbs">
                     <div class="prev" @click="prev()"></div>
                     <div class="next" @click="next()"></div>
-                    <div class="thumb" v-for="(movie , index) in movies">
-                        <img :src="movie.image" alt="Svezia" />
+                    <div class="thumb" v-for="(movie , index) in movies" :class="{active : index === currentIndex}">
+                        <img :src="movie.image"  />
                     </div>
-                   <!--  <div class="thumb">
-                        <img src="assets/img/02.webp" alt="Ratchet & Clank" />
-                    </div>
-                    <div class="thumb">
-                        <img src="assets/img/03.webp" alt="Fortnite" />
-                    </div>
-                    <div class="thumb">
-                        <img src="assets/img/04.webp" alt="Stray" />
-                    </div>
-                    <div class="thumb">
-                        <img src="assets/img/05.webp" alt="Avengers" />
-                    </div> -->
+                  
                 </div>
 
             </div>
