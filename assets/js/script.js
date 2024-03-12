@@ -58,6 +58,9 @@ createApp({
   methods:{
     prev(){
         this.currentIndex--
+    },
+    next(){
+        this.currentIndex++
     }
   }
 }).mount('#app')
