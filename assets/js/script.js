@@ -58,9 +58,17 @@ createApp({
   methods:{
     prev(){
         this.currentIndex--
+        if(this.currentIndex < 0){
+            this.currentIndex=this.movies.length -1
+
+        }
     },
     next(){
         this.currentIndex++
+        if(this.currentIndex === this.movies.length){
+            this.currentIndex=0
+
+        }
     }
   }
 }).mount('#app')
