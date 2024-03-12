@@ -29,7 +29,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-        
+        currentIndex:0,
       movies:[
         {
             image: 'assets/img/01.webp',
