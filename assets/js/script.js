@@ -69,6 +69,9 @@ createApp({
             this.currentIndex=0
 
         }
+    },
+    changeThumb(index){
+        this.currentIndex=index
     }
   }
 }).mount('#app')
