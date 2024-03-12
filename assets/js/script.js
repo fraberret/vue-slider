@@ -54,5 +54,10 @@ createApp({
             }
         ]
     }
+  },
+  methods:{
+    prev(){
+        this.currentIndex--
+    }
   }
 }).mount('#app')
